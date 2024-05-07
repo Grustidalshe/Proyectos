@@ -41,9 +41,9 @@ clean:
 
 fclean: clean
 	$(RM) $(SERVER)
-	 $(RM) $(CLIENT)
+	$(RM) $(CLIENT)
 	make fclean -C $(LIBFT)
 
-re: all clean fclean re
+re: fclean all
 
 .PHONY: all clean fclean re
