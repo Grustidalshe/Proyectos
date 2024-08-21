@@ -24,21 +24,45 @@ void	get_value(t_vars *vars, t_check check)
 		j = 0;
 		while (vars->map[i][j])
 		{
+			printf("%c",j);
 			if (vars->map[i][j] == 'C')
 				vars->collect++;
 			if (vars->map[i][j] == 'P')
 			{
+				if (vars->map[i+1][j] == '1' && vars->map[i-1][j] == '1' && vars->map[i][j+1] == '1' && vars->map[i][j-1] == '1' \
+				 && vars->map[i+1][j-1] == '1' && vars->map[i+1][j+1] == '1' && vars->map[i-1][j+1] == '1' && vars->map[i-1][j-1] == '1')
+				{	
+					printf("Hola");
+					exit(1);
+
+				}
+					
+
 				vars->mouv->x = j;
 				vars->mouv->y = i;
 				vars->map[i][j] = '0';
+
+			}
+			if (vars->map[i][j] == 'E')
+			{
+				if (vars->map[i+1][j] == '1' && vars->map[i-1][j] == '1' && vars->map[i][j+1] == '1' && vars->map[i][j-1] == '1' \
+				 && vars->map[i+1][j-1] == '1' && vars->map[i+1][j+1] == '1' && vars->map[i-1][j+1] == '1' && vars->map[i-1][j-1] == '1')
+				{	
+					printf("Chao");
+					exit(1);
+
+				}
+
 			}
 			j++;
 		}
+		printf("%c",i);
 		i++;
 	}
 	vars->map_x_len = check.len;
 	vars->map_y_len = check.i;
 }
+
 
 void	parsing(char *av, t_vars *vars)
 {
@@ -47,7 +71,6 @@ void	parsing(char *av, t_vars *vars)
 
 	i = 0;
 	check_is_file(av, vars);
-	check = check_is_map(av, vars);
 	vars->map = ft_calloc(sizeof(char *), (check.i + 1));
 	if (!vars->map)
 		__exit__(NULL, vars, FAILURE);
@@ -59,6 +82,9 @@ void	parsing(char *av, t_vars *vars)
 		vars->map[i++] = ft_strdup(check.line);
 		free(check.line);
 	}
+	vars->map_x_len = check.len;
+	vars->map_y_len = check.i;
+	check = check_is_map(av, vars);
 	close(check.fd);
 	get_value(vars, check);
 }

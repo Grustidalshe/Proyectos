@@ -6,7 +6,7 @@
 /*   By: vtrubina <vtrubina@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/19 17:32:48 by vtrubina          #+#    #+#             */
-/*   Updated: 2024/08/19 17:32:51 by vtrubina         ###   ########.fr       */
+/*   Updated: 2024/08/20 01:53:30 by vtrubina         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -135,4 +135,21 @@ void	data_mouv2(t_vars *vars, int i);
 int		check_is_file(char *av, t_vars *vars);
 void	play_loop(int *nbr, int r, t_vars *vars);
 void	free_vars(t_vars *vars);
+/*
+int	check_is_file(char *av, t_vars *vars);
+int	check_playable(t_vars *vars);
+void	flood_fill(int x, int y, char **gridcopy, t_mouv *exit_coll, t_vars *vars);
+int	ff_get_position(char old, t_mouv *exit_coll, t_vars *vars);
+int validate_map(t_vars *vars);
+*/
+int is_surrounded_by_walls(/*t_vars *vars,*/char **map, int x, int y);
+/*int validate_map(t_vars *vars);*/
+//void flood_fill(int x, int y, t_vars *vars, t_mouv *exit_coll);
+//int ff_get_position(char old, t_mouv *exit_coll);
+//int check_playable(t_vars *vars);
+int check_is_file(char *av, t_vars *vars);
+void play_loop(int *nbr, int r, t_vars *vars);
+
+int validate_map(char **map, int rows, int cols);
+
 #endif

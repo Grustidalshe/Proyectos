@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   utils2.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vtrubina <vtrubina@student.42.fr>          +#+  +:+       +#+        */
+/*   By: vtrubina <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/19 17:32:17 by vtrubina          #+#    #+#             */
-/*   Updated: 2024/08/19 17:32:19 by vtrubina         ###   ########.fr       */
+/*   Created: 2024/08/21 19:10:33 by vtrubina          #+#    #+#             */
+/*   Updated: 2024/08/21 20:32:57 by vtrubina         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../so_long.h"
+#define FAILURE 1
 
 int	check_is_file(char *av, t_vars *vars)
 {
@@ -29,6 +30,7 @@ int	check_is_file(char *av, t_vars *vars)
 	return (1);
 }
 
+// Основной цикл игры
 void	play_loop(int *nbr, int r, t_vars *vars)
 {
 	int	i;

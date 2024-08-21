@@ -6,7 +6,7 @@
 /*   By: vtrubina <vtrubina@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/19 17:31:11 by vtrubina          #+#    #+#             */
-/*   Updated: 2024/08/19 17:31:18 by vtrubina         ###   ########.fr       */
+/*   Updated: 2024/08/21 20:47:52 by vtrubina         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	pixel_put_color(t_vars *vars, int x, int y, unsigned int color)
 
 void	draw_one_pixe(t_vars *vars, int i, int x_index, int y_index)
 {
-	const double	pixe_x = ((double)(100 * vars->map_x_len) /
+	const double	pixe_x = ((double)(100 * vars->map_x_len) / 
 		vars->map_x_len);
 	const double	pixe_y = ((double)(100 * vars->map_y_len) /
 		vars->map_y_len);
