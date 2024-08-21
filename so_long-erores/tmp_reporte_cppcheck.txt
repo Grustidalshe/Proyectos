@@ -1,0 +1,521 @@
+[1m/proyecto/libft/ft_atoi.c:29:14: [31m[35mstyle: inconclusive:[39m Redundant condition: If 'EXPR >= '0'', the comparison 'EXPR' is always true. [redundantCondition][0m
+ while (*str && *str >= '0' && *str <= '9')
+             ^
+[1m/proyecto/libft/ft_itoa.c:25:8: [31mstyle:[39m Variable 'isneg' is assigned a value that is never used. [unreadVariable][0m
+  isneg++;
+       ^
+[1m/proyecto/libft/ft_lstadd_back.c:19:7: [31mwarning:[39m Either the condition 'alst' is redundant or there is possible null pointer dereference: alst. [nullPointerRedundantCheck][0m
+ if (*alst == NULL)
+      ^
+[1m/proyecto/libft/ft_lstadd_back.c:21:11: [2mnote:[0m Assuming that condition 'alst' is not redundant
+ else if (alst && new && *alst)
+          ^
+[1m/proyecto/libft/ft_lstadd_back.c:19:7: [2mnote:[0m Null pointer dereference
+ if (*alst == NULL)
+      ^
+[1m/proyecto/libft/ft_memccpy.c:15:24: [31m[35mstyle: inconclusive:[39m Function 'ft_memccpy' argument 1 names different: declaration 'dest' definition 'str'. [funcArgNamesDifferent][0m
+void *ft_memccpy(void *str, const void *ptr, int c, size_t n)
+                       ^
+[1m/proyecto/libft/libft.h:26:27: [2mnote:[0m Function 'ft_memccpy' argument 1 names different: declaration 'dest' definition 'str'.
+void    *ft_memccpy(void *dest, const void *src, int c, size_t n);
+                          ^
+[1m/proyecto/libft/ft_memccpy.c:15:24: [2mnote:[0m Function 'ft_memccpy' argument 1 names different: declaration 'dest' definition 'str'.
+void *ft_memccpy(void *str, const void *ptr, int c, size_t n)
+                       ^
+[1m/proyecto/libft/ft_memccpy.c:15:41: [31m[35mstyle: inconclusive:[39m Function 'ft_memccpy' argument 2 names different: declaration 'src' definition 'ptr'. [funcArgNamesDifferent][0m
+void *ft_memccpy(void *str, const void *ptr, int c, size_t n)
+                                        ^
+[1m/proyecto/libft/libft.h:26:45: [2mnote:[0m Function 'ft_memccpy' argument 2 names different: declaration 'src' definition 'ptr'.
+void    *ft_memccpy(void *dest, const void *src, int c, size_t n);
+                                            ^
+[1m/proyecto/libft/ft_memccpy.c:15:41: [2mnote:[0m Function 'ft_memccpy' argument 2 names different: declaration 'src' definition 'ptr'.
+void *ft_memccpy(void *str, const void *ptr, int c, size_t n)
+                                        ^
+[1m/proyecto/libft/ft_memcmp.c:15:27: [31m[35mstyle: inconclusive:[39m Function 'ft_memcmp' argument 1 names different: declaration 'pointer1' definition 's1'. [funcArgNamesDifferent][0m
+int ft_memcmp(const void *s1, const void *s2, size_t n)
+                          ^
+[1m/proyecto/libft/libft.h:30:31: [2mnote:[0m Function 'ft_memcmp' argument 1 names different: declaration 'pointer1' definition 's1'.
+int     ft_memcmp(const void *pointer1, const void *pointer2,
+                              ^
+[1m/proyecto/libft/ft_memcmp.c:15:27: [2mnote:[0m Function 'ft_memcmp' argument 1 names different: declaration 'pointer1' definition 's1'.
+int ft_memcmp(const void *s1, const void *s2, size_t n)
+                          ^
+[1m/proyecto/libft/ft_memcmp.c:15:43: [31m[35mstyle: inconclusive:[39m Function 'ft_memcmp' argument 2 names different: declaration 'pointer2' definition 's2'. [funcArgNamesDifferent][0m
+int ft_memcmp(const void *s1, const void *s2, size_t n)
+                                          ^
+[1m/proyecto/libft/libft.h:30:53: [2mnote:[0m Function 'ft_memcmp' argument 2 names different: declaration 'pointer2' definition 's2'.
+int     ft_memcmp(const void *pointer1, const void *pointer2,
+                                                    ^
+[1m/proyecto/libft/ft_memcmp.c:15:43: [2mnote:[0m Function 'ft_memcmp' argument 2 names different: declaration 'pointer2' definition 's2'.
+int ft_memcmp(const void *s1, const void *s2, size_t n)
+                                          ^
+[1m/proyecto/libft/ft_memcmp.c:15:54: [31m[35mstyle: inconclusive:[39m Function 'ft_memcmp' argument 3 names different: declaration 'size' definition 'n'. [funcArgNamesDifferent][0m
+int ft_memcmp(const void *s1, const void *s2, size_t n)
+                                                     ^
+[1m/proyecto/libft/libft.h:31:14: [2mnote:[0m Function 'ft_memcmp' argument 3 names different: declaration 'size' definition 'n'.
+      size_t size);
+             ^
+[1m/proyecto/libft/ft_memcmp.c:15:54: [2mnote:[0m Function 'ft_memcmp' argument 3 names different: declaration 'size' definition 'n'.
+int ft_memcmp(const void *s1, const void *s2, size_t n)
+                                                     ^
+[1m/proyecto/libft/ft_memmove.c:17:10: [31mstyle:[39m The scope of the variable 'i' can be reduced. [variableScope][0m
+ size_t  i;
+         ^
+[1m/proyecto/libft/ft_memmove.c:15:24: [31m[35mstyle: inconclusive:[39m Function 'ft_memmove' argument 1 names different: declaration 'destination' definition 's1'. [funcArgNamesDifferent][0m
+void *ft_memmove(void *s1, const void *s2, size_t n)
+                       ^
+[1m/proyecto/libft/libft.h:27:27: [2mnote:[0m Function 'ft_memmove' argument 1 names different: declaration 'destination' definition 's1'.
+void    *ft_memmove(void *destination, const void *source,
+                          ^
+[1m/proyecto/libft/ft_memmove.c:15:24: [2mnote:[0m Function 'ft_memmove' argument 1 names different: declaration 'destination' definition 's1'.
+void *ft_memmove(void *s1, const void *s2, size_t n)
+                       ^
+[1m/proyecto/libft/ft_memmove.c:15:40: [31m[35mstyle: inconclusive:[39m Function 'ft_memmove' argument 2 names different: declaration 'source' definition 's2'. [funcArgNamesDifferent][0m
+void *ft_memmove(void *s1, const void *s2, size_t n)
+                                       ^
+[1m/proyecto/libft/libft.h:27:52: [2mnote:[0m Function 'ft_memmove' argument 2 names different: declaration 'source' definition 's2'.
+void    *ft_memmove(void *destination, const void *source,
+                                                   ^
+[1m/proyecto/libft/ft_memmove.c:15:40: [2mnote:[0m Function 'ft_memmove' argument 2 names different: declaration 'source' definition 's2'.
+void *ft_memmove(void *s1, const void *s2, size_t n)
+                                       ^
+[1m/proyecto/libft/ft_memmove.c:15:51: [31m[35mstyle: inconclusive:[39m Function 'ft_memmove' argument 3 names different: declaration 'size' definition 'n'. [funcArgNamesDifferent][0m
+void *ft_memmove(void *s1, const void *s2, size_t n)
+                                                  ^
+[1m/proyecto/libft/libft.h:28:14: [2mnote:[0m Function 'ft_memmove' argument 3 names different: declaration 'size' definition 'n'.
+      size_t size);
+             ^
+[1m/proyecto/libft/ft_memmove.c:15:51: [2mnote:[0m Function 'ft_memmove' argument 3 names different: declaration 'size' definition 'n'.
+void *ft_memmove(void *s1, const void *s2, size_t n)
+                                                  ^
+[1m/proyecto/libft/ft_putstr.c:15:22: [31m[35mstyle: inconclusive:[39m Function 'ft_putstr' argument 1 names different: declaration 's' definition 'str'. [funcArgNamesDifferent][0m
+void ft_putstr(char *str)
+                     ^
+[1m/proyecto/libft/libft.h:61:25: [2mnote:[0m Function 'ft_putstr' argument 1 names different: declaration 's' definition 'str'.
+void    ft_putstr(char *s);
+                        ^
+[1m/proyecto/libft/ft_putstr.c:15:22: [2mnote:[0m Function 'ft_putstr' argument 1 names different: declaration 's' definition 'str'.
+void ft_putstr(char *str)
+                     ^
+[1m/proyecto/libft/ft_putstr_fd.c:22:16: [31mwarning:[39m Comparison is wrong. Result of 's+i' can't be 0 unless there is pointer overflow, and pointer overflow is undefined behaviour. [pointerAdditionResultNotNull][0m
+  while (s + i != NULL && s[i] != '\0')
+               ^
+[1m/proyecto/libft/ft_putstr_fd.c:17:7: [31mstyle:[39m The scope of the variable 'i' can be reduced. [variableScope][0m
+ int  i;
+      ^
+[1m/proyecto/libft/ft_split.c:80:29: [31m[35mstyle: inconclusive:[39m Function 'ft_split' argument 1 names different: declaration 's' definition 'str'. [funcArgNamesDifferent][0m
+char **ft_split(const char *str, char c)
+                            ^
+[1m/proyecto/libft/libft.h:56:32: [2mnote:[0m Function 'ft_split' argument 1 names different: declaration 's' definition 'str'.
+char    **ft_split(char const *s, char c);
+                               ^
+[1m/proyecto/libft/ft_split.c:80:29: [2mnote:[0m Function 'ft_split' argument 1 names different: declaration 's' definition 'str'.
+char **ft_split(const char *str, char c)
+                            ^
+[1m/proyecto/libft/ft_strlcpy.c:26:12: [31mstyle:[39m Array index 'i' is used before limits check. [arrayIndexThenCheck][0m
+ while (src[i] != '\0' && i < limit)
+           ^
+[1m/proyecto/libft/ft_strlcpy.c:15:25: [31m[35mstyle: inconclusive:[39m Function 'ft_strlcpy' argument 1 names different: declaration 'destination' definition 'dst'. [funcArgNamesDifferent][0m
+size_t ft_strlcpy(char *dst, const char *src, size_t dstsize)
+                        ^
+[1m/proyecto/libft/libft.h:44:28: [2mnote:[0m Function 'ft_strlcpy' argument 1 names different: declaration 'destination' definition 'dst'.
+size_t    ft_strlcpy(char *destination, const char *source,
+                           ^
+[1m/proyecto/libft/ft_strlcpy.c:15:25: [2mnote:[0m Function 'ft_strlcpy' argument 1 names different: declaration 'destination' definition 'dst'.
+size_t ft_strlcpy(char *dst, const char *src, size_t dstsize)
+                        ^
+[1m/proyecto/libft/ft_strlcpy.c:15:42: [31m[35mstyle: inconclusive:[39m Function 'ft_strlcpy' argument 2 names different: declaration 'source' definition 'src'. [funcArgNamesDifferent][0m
+size_t ft_strlcpy(char *dst, const char *src, size_t dstsize)
+                                         ^
+[1m/proyecto/libft/libft.h:44:53: [2mnote:[0m Function 'ft_strlcpy' argument 2 names different: declaration 'source' definition 'src'.
+size_t    ft_strlcpy(char *destination, const char *source,
+                                                    ^
+[1m/proyecto/libft/ft_strlcpy.c:15:42: [2mnote:[0m Function 'ft_strlcpy' argument 2 names different: declaration 'source' definition 'src'.
+size_t ft_strlcpy(char *dst, const char *src, size_t dstsize)
+                                         ^
+[1m/proyecto/libft/ft_strlcpy.c:15:54: [31m[35mstyle: inconclusive:[39m Function 'ft_strlcpy' argument 3 names different: declaration 'size' definition 'dstsize'. [funcArgNamesDifferent][0m
+size_t ft_strlcpy(char *dst, const char *src, size_t dstsize)
+                                                     ^
+[1m/proyecto/libft/libft.h:45:14: [2mnote:[0m Function 'ft_strlcpy' argument 3 names different: declaration 'size' definition 'dstsize'.
+      size_t size);
+             ^
+[1m/proyecto/libft/ft_strlcpy.c:15:54: [2mnote:[0m Function 'ft_strlcpy' argument 3 names different: declaration 'size' definition 'dstsize'.
+size_t ft_strlcpy(char *dst, const char *src, size_t dstsize)
+                                                     ^
+[1m/proyecto/libft/ft_substr.c:18:9: [31mstyle:[39m The scope of the variable 'len2' can be reduced. [variableScope][0m
+ size_t len2;
+        ^
+[1m/proyecto/libft/get_next_line.c:50:34: [31m[35mstyle: inconclusive:[39m Function 'get_next_line' argument 2 names different: declaration 'line' definition 'out'. [funcArgNamesDifferent][0m
+int get_next_line(int fd, char **out)
+                                 ^
+[1m/proyecto/libft/libft.h:82:38: [2mnote:[0m Function 'get_next_line' argument 2 names different: declaration 'line' definition 'out'.
+int     get_next_line(int fd, char **line);
+                                     ^
+[1m/proyecto/libft/get_next_line.c:50:34: [2mnote:[0m Function 'get_next_line' argument 2 names different: declaration 'line' definition 'out'.
+int get_next_line(int fd, char **out)
+                                 ^
+[1m/proyecto/libft/get_next_line.c:15:55: [31mstyle:[39m Parameter 'buff' can be declared with const [constParameter][0m
+char *recurs_if(char *out, int depth, int *ret, char *buff)
+                                                      ^
+[1m/proyecto/mlx_linux/mlx_clear_window.c:20:0: [31merror:[39m Found a exit path from function with non-void return type that has missing return statement [missingReturn][0m
+    XFlush(xvar->display);
+^
+[1m/proyecto/mlx_linux/mlx_destroy_image.c:30:0: [31merror:[39m Found a exit path from function with non-void return type that has missing return statement [missingReturn][0m
+    XFlush(xvar->display);
+^
+[1m/proyecto/mlx_linux/mlx_destroy_window.c:37:0: [31merror:[39m Found a exit path from function with non-void return type that has missing return statement [missingReturn][0m
+    XFlush(xvar->display);
+^
+[1m/proyecto/mlx_linux/mlx_expose_hook.c:21:3: [31merror:[39m Found a exit path from function with non-void return type that has missing return statement [missingReturn][0m
+  win->hooks[Expose].mask = ExposureMask;
+  ^
+[1m/proyecto/mlx_linux/mlx_ext_randr.c:18:9: [31mstyle:[39m The scope of the variable 'j' can be reduced. [variableScope][0m
+  int   j;
+        ^
+[1m/proyecto/mlx_linux/mlx_hook.c:22:3: [31merror:[39m Found a exit path from function with non-void return type that has missing return statement [missingReturn][0m
+  win->hooks[x_event].mask = x_mask;
+  ^
+[1m/proyecto/mlx_linux/mlx_init.c:76:2: [31merror:[39m Found a exit path from function with non-void return type that has missing return statement [missingReturn][0m
+ }
+ ^
+[1m/proyecto/mlx_linux/mlx_int_do_nothing.c:16:1: [31merror:[39m Found a exit path from function with non-void return type that has missing return statement [missingReturn][0m
+}
+^
+[1m/proyecto/mlx_linux/mlx_int_param_event.c:15:1: [31merror:[39m Found a exit path from function with non-void return type that has missing return statement [missingReturn][0m
+}
+^
+[1m/proyecto/mlx_linux/mlx_int_param_event.c:19:3: [31merror:[39m Found a exit path from function with non-void return type that has missing return statement [missingReturn][0m
+  win->hooks[KeyPress].hook(XkbKeycodeToKeysym(xvar->display,
+  ^
+[1m/proyecto/mlx_linux/mlx_int_param_event.c:26:3: [31merror:[39m Found a exit path from function with non-void return type that has missing return statement [missingReturn][0m
+  win->hooks[KeyRelease].hook(XkbKeycodeToKeysym(xvar->display,
+  ^
+[1m/proyecto/mlx_linux/mlx_int_param_event.c:33:3: [31merror:[39m Found a exit path from function with non-void return type that has missing return statement [missingReturn][0m
+  win->hooks[ButtonPress].hook(ev->xbutton.button,ev->xbutton.x,ev->xbutton.y,
+  ^
+[1m/proyecto/mlx_linux/mlx_int_param_event.c:39:3: [31merror:[39m Found a exit path from function with non-void return type that has missing return statement [missingReturn][0m
+  win->hooks[ButtonRelease].hook(ev->xbutton.button,
+  ^
+[1m/proyecto/mlx_linux/mlx_int_param_event.c:46:3: [31merror:[39m Found a exit path from function with non-void return type that has missing return statement [missingReturn][0m
+  win->hooks[MotionNotify].hook(ev->xbutton.x,ev->xbutton.y,
+  ^
+[1m/proyecto/mlx_linux/mlx_int_param_event.c:53:0: [31merror:[39m Found a exit path from function with non-void return type that has missing return statement [missingReturn][0m
+    win->hooks[Expose].hook(win->hooks[Expose].param);
+^
+[1m/proyecto/mlx_linux/mlx_int_param_event.c:59:3: [31merror:[39m Found a exit path from function with non-void return type that has missing return statement [missingReturn][0m
+  win->hooks[ev->type].hook(win->hooks[ev->type].param);
+  ^
+[1m/proyecto/mlx_linux/mlx_int_set_win_event_mask.c:21:8: [31mstyle:[39m The scope of the variable 'i' can be reduced. [variableScope][0m
+  int  i;
+       ^
+[1m/proyecto/mlx_linux/mlx_int_set_win_event_mask.c:20:8: [31mstyle:[39m Unused variable: mask [unusedVariable][0m
+  int  mask;
+       ^
+[1m/proyecto/mlx_linux/mlx_int_str_to_wordtab.c:19:9: [31mstyle:[39m The scope of the variable 's' can be reduced. [variableScope][0m
+  char *s;
+        ^
+[1m/proyecto/mlx_linux/mlx_int_str_to_wordtab.c:20:9: [31mstyle:[39m The scope of the variable 'f' can be reduced. [variableScope][0m
+  char *f;
+        ^
+[1m/proyecto/mlx_linux/mlx_key_hook.c:21:3: [31merror:[39m Found a exit path from function with non-void return type that has missing return statement [missingReturn][0m
+  win->hooks[KeyRelease].mask = KeyReleaseMask;
+  ^
+[1m/proyecto/mlx_linux/mlx_loop_hook.c:20:3: [31merror:[39m Found a exit path from function with non-void return type that has missing return statement [missingReturn][0m
+  xvar->loop_param = param;
+  ^
+[1m/proyecto/mlx_linux/mlx_mouse_hook.c:21:3: [31merror:[39m Found a exit path from function with non-void return type that has missing return statement [missingReturn][0m
+  win->hooks[ButtonPress].mask = ButtonPressMask;
+  ^
+[1m/proyecto/mlx_linux/mlx_new_image.c:27:0: [31merror:[39m Found a exit path from function with non-void return type that has missing return statement [missingReturn][0m
+    write(2,WARN_SHM_ATTACH,strlen(WARN_SHM_ATTACH));
+^
+[1m/proyecto/mlx_linux/mlx_new_image.c:77:8: [31mstyle:[39m Condition '0&XSync(xvar->display,False)' is always false [knownConditionTrueFalse][0m
+      0&XSync(xvar->display,False) || mlx_X_error)
+       ^
+[1m/proyecto/mlx_linux/mlx_new_image.c:139:10: [31mstyle:[39m The scope of the variable 'img' can be reduced. [variableScope][0m
+  t_img *img;
+         ^
+[1m/proyecto/mlx_linux/mlx_new_image.c:149:10: [31mstyle:[39m The scope of the variable 'img' can be reduced. [variableScope][0m
+  t_img *img;
+         ^
+[1m/proyecto/mlx_linux/mlx_pixel_put.c:25:0: [31merror:[39m Found a exit path from function with non-void return type that has missing return statement [missingReturn][0m
+     XFlush(xvar->display);
+^
+[1m/proyecto/mlx_linux/mlx_put_image_to_window.c:36:0: [31merror:[39m Found a exit path from function with non-void return type that has missing return statement [missingReturn][0m
+    XFlush(xvar->display);
+^
+[1m/proyecto/mlx_linux/mlx_screen_size.c:12:2: [31merror:[39m Found a exit path from function with non-void return type that has missing return statement [missingReturn][0m
+ (*sizey) = xwAttr.height;
+ ^
+[1m/proyecto/mlx_linux/mlx_screen_size.c:10:6: [31mstyle:[39m Variable 'ret' is assigned a value that is never used. [unreadVariable][0m
+ ret = XGetWindowAttributes(xvar->display, xvar->root, &xwAttr);
+     ^
+[1m/proyecto/mlx_linux/mlx_string_put.c:25:0: [31merror:[39m Found a exit path from function with non-void return type that has missing return statement [missingReturn][0m
+     XFlush(xvar->display);
+^
+[1m/proyecto/mlx_linux/mlx_xpm.c:53:12: [31mstyle:[39m Array index 'i' is used before limits check. [arrayIndexThenCheck][0m
+ while (src[i] != '\0' && i < (size - 1))
+           ^
+[1m/proyecto/mlx_linux/mlx_xpm.c:315:11: [31mstyle:[39m Variable 'fd' is reassigned a value before the old one has been used. [redundantAssignment][0m
+  if ((fd = open(file,O_RDONLY))==-1 || (size = lseek(fd,0,SEEK_END))==-1 ||
+          ^
+[1m/proyecto/mlx_linux/mlx_xpm.c:314:6: [2mnote:[0m fd is assigned
+  fd = -1;
+     ^
+[1m/proyecto/mlx_linux/mlx_xpm.c:315:11: [2mnote:[0m fd is overwritten
+  if ((fd = open(file,O_RDONLY))==-1 || (size = lseek(fd,0,SEEK_END))==-1 ||
+          ^
+[1m/proyecto/mlx_linux/mlx_xpm.c:145:8: [31mstyle:[39m The scope of the variable 'rgb_col' can be reduced. [variableScope][0m
+  int  rgb_col;
+       ^
+[1m/proyecto/mlx_linux/mlx_xpm.c:148:8: [31mstyle:[39m The scope of the variable 'x' can be reduced. [variableScope][0m
+  int  x;
+       ^
+[1m/proyecto/mlx_linux/mlx_xpm.c:44:53: [31mstyle:[39m Parameter 'src' can be declared with const [constParameter][0m
+unsigned int strlcpy_is_not_posix(char *dest, char *src, unsigned int size)
+                                                    ^
+[1m/proyecto/mlx_linux/mlx_xpm.c:62:34: [31mstyle:[39m Parameter 'xpm_data' can be declared with const [constParameter][0m
+char *mlx_int_static_line(char **xpm_data,int *pos,int size)
+                                 ^
+[1m/proyecto/mlx_linux/mlx_xpm.c:184:13: [31mstyle:[39m Variable 'clip_data' is assigned a value that is never used. [unreadVariable][0m
+  clip_data = 0;
+            ^
+[1m/proyecto/mlx_linux/mlx_xpm.c:156:11: [31mstyle:[39m Unused variable: clip_img [unusedVariable][0m
+  XImage *clip_img;
+          ^
+[1m/proyecto/mlx_linux/mlx_xpm.c:157:13: [31mstyle:[39m Unused variable: xgcv [unusedVariable][0m
+  XGCValues xgcv;
+            ^
+[1m/proyecto/mlx_linux/mlx_xpm.c:158:10: [31mstyle:[39m Unused variable: clip_pix [unusedVariable][0m
+  Pixmap clip_pix;
+         ^
+[1m/proyecto/mlx_linux/test/main.c:59:0: [31merror:[39m Found a exit path from function with non-void return type that has missing return statement [missingReturn][0m
+    exit(0);
+^
+[1m/proyecto/mlx_linux/test/main.c:66:0: [31merror:[39m Found a exit path from function with non-void return type that has missing return statement [missingReturn][0m
+    exit(0);
+^
+[1m/proyecto/mlx_linux/test/main.c:73:0: [31merror:[39m Found a exit path from function with non-void return type that has missing return statement [missingReturn][0m
+    mlx_destroy_window(mlx,win3);
+^
+[1m/proyecto/mlx_linux/test/main.c:78:3: [31merror:[39m Found a exit path from function with non-void return type that has missing return statement [missingReturn][0m
+  printf("Mouse in Win1, button %d at %dx%d.\n",button,x,y);
+  ^
+[1m/proyecto/mlx_linux/test/main.c:83:3: [31merror:[39m Found a exit path from function with non-void return type that has missing return statement [missingReturn][0m
+  printf("Mouse in Win2, button %d at %dx%d.\n",button,x,y);
+  ^
+[1m/proyecto/mlx_linux/test/main.c:88:3: [31merror:[39m Found a exit path from function with non-void return type that has missing return statement [missingReturn][0m
+  printf("Mouse moving in Win3, at %dx%d.\n",x,y);
+  ^
+[1m/proyecto/mlx_linux/test/main.c:227:7: [31mstyle:[39m The scope of the variable 'y' can be reduced. [variableScope][0m
+  int y;
+      ^
+[1m/proyecto/mlx_linux/test/main.c:245:7: [31mstyle:[39m The scope of the variable 'x' can be reduced. [variableScope][0m
+  int x;
+      ^
+[1m/proyecto/mlx_linux/test/main.c:251:18: [31mstyle:[39m The scope of the variable 'ptr' can be reduced. [variableScope][0m
+  unsigned char *ptr;
+                 ^
+[1m/proyecto/srcs/check.c:17:6: [31mstyle:[39m The scope of the variable 'i' can be reduced. [variableScope][0m
+ int i;
+     ^
+[1m/proyecto/srcs/check.c:60:8: [31mstyle:[39m The scope of the variable 'j' can be reduced. [variableScope][0m
+ int   j;
+       ^
+[1m/proyecto/srcs/exit.c:19:2: [31mwarning:[39m Assignment of function parameter has no effect outside the function. Did you forget dereferencing it? [uselessAssignmentPtrArg][0m
+ vars = NULL;
+ ^
+[1m/proyecto/srcs/exit.c:47:7: [31mstyle:[39m The scope of the variable 'i' can be reduced. [variableScope][0m
+ int  i;
+      ^
+[1m/proyecto/srcs/exit.c:69:7: [31mstyle:[39m The scope of the variable 'i' can be reduced. [variableScope][0m
+ int  i;
+      ^
+[1m/proyecto/srcs/exit.c:26:7: [31mstyle:[39m The scope of the variable 'i' can be reduced. [variableScope][0m
+ int  i;
+      ^
+[1m/proyecto/srcs/images.c:31:11: [31mstyle:[39m The scope of the variable 'x' can be reduced. [variableScope][0m
+ double   x;
+          ^
+[1m/proyecto/srcs/images.c:55:7: [31mstyle:[39m The scope of the variable 'x' can be reduced. [variableScope][0m
+ int  x;
+      ^
+[1m/proyecto/srcs/main.c:24:6: [31mwarning:[39m Either the condition '!vars->img' is redundant or there is possible null pointer dereference: vars->img. [nullPointerRedundantCheck][0m
+ vars->img->img = mlx_new_image(vars->mlx, 100 * vars->map_x_len, 100
+     ^
+[1m/proyecto/srcs/main.c:26:6: [2mnote:[0m Assuming that condition '!vars->img' is not redundant
+ if (!vars->img)
+     ^
+[1m/proyecto/srcs/main.c:24:6: [2mnote:[0m Null pointer dereference
+ vars->img->img = mlx_new_image(vars->mlx, 100 * vars->map_x_len, 100
+     ^
+[1m/proyecto/srcs/main.c:55:2: [31mwarning:[39m Either the condition '!vars' is redundant or there is possible null pointer dereference: vars. [nullPointerRedundantCheck][0m
+ vars->mouv = malloc(sizeof(t_mouv));
+ ^
+[1m/proyecto/srcs/main.c:53:6: [2mnote:[0m Assuming that condition '!vars' is not redundant
+ if (!vars)
+     ^
+[1m/proyecto/srcs/main.c:55:2: [2mnote:[0m Null pointer dereference
+ vars->mouv = malloc(sizeof(t_mouv));
+ ^
+[1m/proyecto/srcs/main.c:56:7: [31mwarning:[39m Either the condition '!vars' is redundant or there is possible null pointer dereference: vars. [nullPointerRedundantCheck][0m
+ if (!vars->mouv)
+      ^
+[1m/proyecto/srcs/main.c:53:6: [2mnote:[0m Assuming that condition '!vars' is not redundant
+ if (!vars)
+     ^
+[1m/proyecto/srcs/main.c:56:7: [2mnote:[0m Null pointer dereference
+ if (!vars->mouv)
+      ^
+[1m/proyecto/srcs/main.c:46:14: [31m[35mstyle: inconclusive:[39m Function 'main' argument 1 names different: declaration 'ac' definition 'argc'. [funcArgNamesDifferent][0m
+int main(int argc, char **argv)
+             ^
+[1m/proyecto/so_long.h:123:15: [2mnote:[0m Function 'main' argument 1 names different: declaration 'ac' definition 'argc'.
+int  main(int ac, char **av);
+              ^
+[1m/proyecto/srcs/main.c:46:14: [2mnote:[0m Function 'main' argument 1 names different: declaration 'ac' definition 'argc'.
+int main(int argc, char **argv)
+             ^
+[1m/proyecto/srcs/main.c:46:27: [31m[35mstyle: inconclusive:[39m Function 'main' argument 2 names different: declaration 'av' definition 'argv'. [funcArgNamesDifferent][0m
+int main(int argc, char **argv)
+                          ^
+[1m/proyecto/so_long.h:123:26: [2mnote:[0m Function 'main' argument 2 names different: declaration 'av' definition 'argv'.
+int  main(int ac, char **av);
+                         ^
+[1m/proyecto/srcs/main.c:46:27: [2mnote:[0m Function 'main' argument 2 names different: declaration 'av' definition 'argv'.
+int main(int argc, char **argv)
+                          ^
+[1m/proyecto/srcs/parser.c:37:7: [31mstyle:[39m The scope of the variable 'j' can be reduced. [variableScope][0m
+ int  j;
+      ^
+[1m/proyecto/srcs/parser.c:79:41: [31merror:[39m Uninitialized struct member: check.i [uninitStructMember][0m
+ vars->map = ft_calloc(sizeof(char *), (check.i + 1));
+                                        ^
+[1m/proyecto/srcs/parser.c:79:47: [31merror:[39m Uninitialized variable: check.i [uninitvar][0m
+ vars->map = ft_calloc(sizeof(char *), (check.i + 1));
+                                              ^
+[1m/proyecto/srcs/utils2.c:36:6: [31mstyle:[39m The scope of the variable 'i' can be reduced. [variableScope][0m
+ int i;
+     ^
+[1m/proyecto/srcs/utils2.c:34:21: [31mstyle:[39m Parameter 'nbr' can be declared with const [constParameter][0m
+void play_loop(int *nbr, int r, t_vars *vars)
+                    ^
+[1m/proyecto/libft/ft_atoi.c:15:0: [31mstyle:[39m The function 'ft_atoi' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/libft/ft_isalnum.c:15:0: [31mstyle:[39m The function 'ft_isalnum' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/libft/ft_isalpha.c:15:0: [31mstyle:[39m The function 'ft_isalpha' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/libft/ft_isascii.c:15:0: [31mstyle:[39m The function 'ft_isascii' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/libft/ft_isdigit.c:15:0: [31mstyle:[39m The function 'ft_isdigit' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/libft/ft_isprint.c:15:0: [31mstyle:[39m The function 'ft_isprint' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/libft/ft_lstadd_front.c:15:0: [31mstyle:[39m The function 'ft_lstadd_front' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/libft/ft_lstclear.c:15:0: [31mstyle:[39m The function 'ft_lstclear' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/libft/ft_lstiter.c:15:0: [31mstyle:[39m The function 'ft_lstiter' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/libft/ft_lstmap.c:15:0: [31mstyle:[39m The function 'ft_lstmap' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/libft/ft_lstsize.c:15:0: [31mstyle:[39m The function 'ft_lstsize' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/libft/ft_memccpy.c:15:0: [31mstyle:[39m The function 'ft_memccpy' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/libft/ft_memset.c:15:0: [31mstyle:[39m The function 'ft_memset' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/libft/ft_putendl_fd.c:15:0: [31mstyle:[39m The function 'ft_putendl_fd' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/libft/ft_split.c:80:0: [31mstyle:[39m The function 'ft_split' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/libft/ft_strjoin.c:15:0: [31mstyle:[39m The function 'ft_strjoin' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/libft/ft_strlcat.c:15:0: [31mstyle:[39m The function 'ft_strlcat' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/libft/ft_strlcpy.c:15:0: [31mstyle:[39m The function 'ft_strlcpy' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/libft/ft_strmapi.c:15:0: [31mstyle:[39m The function 'ft_strmapi' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/libft/ft_strncmp.c:15:0: [31mstyle:[39m The function 'ft_strncmp' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/libft/ft_strnstr.c:15:0: [31mstyle:[39m The function 'ft_strnstr' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/libft/ft_strrchr.c:15:0: [31mstyle:[39m The function 'ft_strrchr' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/libft/ft_strtrim.c:15:0: [31mstyle:[39m The function 'ft_strtrim' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/libft/ft_tolower.c:15:0: [31mstyle:[39m The function 'ft_tolower' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/libft/ft_toupper.c:15:0: [31mstyle:[39m The function 'ft_toupper' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/mlx_linux/mlx_hook.c:26:0: [31mstyle:[39m The function 'mlx_do_key_autorepeatoff' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/mlx_linux/mlx_hook.c:37:0: [31mstyle:[39m The function 'mlx_do_sync' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/mlx_linux/mlx_ext_randr.c:14:0: [31mstyle:[39m The function 'mlx_ext_fullscreen' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/mlx_linux/mlx_flush_event.c:17:0: [31mstyle:[39m The function 'mlx_flush_event' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/mlx_linux/mlx_screen_size.c:3:0: [31mstyle:[39m The function 'mlx_get_screen_size' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/mlx_linux/mlx_int_do_nothing.c:13:0: [31mstyle:[39m The function 'mlx_int_do_nothing' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/mlx_linux/mlx_loop.c:31:0: [31mstyle:[39m The function 'mlx_loop_end' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/mlx_linux/mlx_mouse.c:36:0: [31mstyle:[39m The function 'mlx_mouse_get_pos' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/mlx_linux/mlx_mouse.c:9:0: [31mstyle:[39m The function 'mlx_mouse_hide' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/mlx_linux/mlx_mouse.c:3:0: [31mstyle:[39m The function 'mlx_mouse_move' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/mlx_linux/mlx_mouse.c:23:0: [31mstyle:[39m The function 'mlx_mouse_show' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/mlx_linux/mlx_new_image.c:147:0: [31mstyle:[39m The function 'mlx_new_image2' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/mlx_linux/mlx_set_font.c:22:0: [31mstyle:[39m The function 'mlx_set_font' is never used. [unusedFunction][0m
+
+^
+[1m/proyecto/mlx_linux/mlx_lib_xpm.c:93:0: [31mstyle:[39m The function 'mlx_xpm_to_image' is never used. [unusedFunction][0m
+
+^
+[1mnofile:0:0: [31minformation:[39m Cppcheck cannot find all the include files (use --check-config for details) [missingInclude][0m
+

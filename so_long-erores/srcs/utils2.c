@@ -1,0 +1,47 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   utils2.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: vtrubina <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/08/21 19:10:33 by vtrubina          #+#    #+#             */
+/*   Updated: 2024/08/21 20:32:57 by vtrubina         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "../so_long.h"
+#define FAILURE 1
+
+int	check_is_file(char *av, t_vars *vars)
+{
+	int	i;
+
+	i = ft_strlen(av);
+	while (av[i] != '.')
+	{
+		if (i == 0)
+			__exit__("Error\n☞ bad file\n", vars, FAILURE);
+		i--;
+	}
+	i++;
+	if (ft_strcmp((av + i), "ber") != 0)
+		__exit__("Error\n☞ bad file extension\n", vars, FAILURE);
+	return (1);
+}
+
+// Основной цикл игры
+void	play_loop(int *nbr, int r, t_vars *vars)
+{
+	int	i;
+
+	i = 0;
+	if (!r)
+	{
+		while (i < 3)
+		{
+			if (nbr[i++] < 1 || nbr[2] > 1)
+				__exitc__(4, vars, FAILURE);
+		}
+	}
+}
